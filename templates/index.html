@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Pink World</title>
+    <!-- Link para o Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            color: #e83e8c;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #6c757d;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+        }
+
+        .btn {
+            width: 250px;
+            padding: 12px;
+            font-size: 16px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn-client {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .btn-client:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-admin {
+            background-color: #dc3545;
+            color: white;
+        }
+
+        .btn-admin:hover {
+            background-color: #c82333;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Salão de Belezas Pink World</h1>
+        <h2>Escolher o tipo de acesso:</h2>
+
+        <!-- Botões de acesso -->
+        <div class="btn-group">
+            <!-- Botão para login como cliente -->
+            <a href="{{ url_for('login') }}" class="btn btn-client">Cliente</a>
+
+            <!-- Botão para login como administrador -->
+            <a href="{{ url_for('login_admin') }}" class="btn btn-admin">Administrador</a>
+        </div>
+    </div>
+
+    <!-- Link para o Bootstrap JS (caso você precise de interações) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
